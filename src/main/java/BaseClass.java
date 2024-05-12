@@ -14,7 +14,7 @@ public class BaseClass {
 
     public Response getJoke(String value) {
         Response response = given()
-                .get(PREFIX_URL+ value)
+                .get(PREFIX_URL + value)
                 .then()
                 .statusCode(200)
                 .extract()
