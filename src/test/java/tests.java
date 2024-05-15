@@ -11,7 +11,7 @@ public class tests extends BaseClass {
         Assert.assertEquals(1, 1, "yes!");
     }
 
-    @Test(invocationCount = 5)
+    @Test(invocationCount = 5, priority = 1)
     public void categorisedJoke() {
         getRandomCategorisedJoke();
         Assert.fail();
