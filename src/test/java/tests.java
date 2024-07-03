@@ -1,3 +1,4 @@
+import io.qameta.allure.Allure;
 import io.qameta.allure.Step;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -15,5 +16,6 @@ public class tests extends BaseClass {
     public void categorisedJoke() {
         getRandomCategorisedJoke();
 //        Assert.fail();
+        Allure.label("sdsds", "sds");
     }
 }
